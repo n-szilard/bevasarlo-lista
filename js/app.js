@@ -66,4 +66,12 @@ let ClearForm = () => {
     countField.value = 0;
 }
 
+let Save = () => {
+
+}
+
+let Load = () => {
+    
+}
+
 ClearForm();
