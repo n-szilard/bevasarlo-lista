@@ -1,1 +1,1 @@
-# bevasarlo-lista
+# Bevásárló lista
