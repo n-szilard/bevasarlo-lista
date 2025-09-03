@@ -18,3 +18,7 @@ footer h6 {
     font-weight: bold;
     color: var(--bs-danger);
 }
+
+tfoot {
+    font-size: larger;
+}
