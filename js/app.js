@@ -23,6 +23,7 @@ addBtn.addEventListener("click", () => {
 
     RefreshTable();
     ClearForm();
+    Save();
 });
 
 let RefreshTable = () => {
@@ -67,11 +68,17 @@ let ClearForm = () => {
 }
 
 let Save = () => {
-
+    localStorage.setItem("bevLista", JSON.stringify(items))
 }
 
 let Load = () => {
-    
+    if (localStorage.getItem("bevLista")) {
+        items = JSON.parse(localStorage.getItem("bevLista"));
+    }
 }
 
+
+// App indulás
+Load();
+RefreshTable();
 ClearForm();
